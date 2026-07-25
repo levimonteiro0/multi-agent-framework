@@ -3,9 +3,9 @@
   "framework": "levimonteiro0 Multi-Agent Framework",
   "version": "1.0.0",
   "status": "IDLE",
-  "activeCycle": 0,
+  "activeCycle": 2,
   "currentAgent": "orchestrator",
-  "prdSource": "PRD.md",
+  "prdSource": "docs/PRD.md",
   "guardrails": {
     "ssot": true,
     "tailwindAndTokens": true,
@@ -15,44 +15,44 @@
   "userAnswers": {},
   "tasks": [
     {
-      "id": "task-1784939263629-930",
-      "title": "Especificar arquitetura SSoT e contratos de componentes para o Funnel Builder (Drag & Drop, Auto-Save, Painel de Propriedades)",
+      "id": "task-1784940526630-164",
+      "title": "Especificar arquitetura SSoT e contratos para a Gestao de Usuarios Administrativa (UsersClient, Busca, Filtros, Toasts e RBAC)",
       "assignedAgent": "architect",
-      "description": "Decompor o Funnel Builder em schemas Zod, modelos Prisma e tipos de props",
+      "description": "Decompor especificacoes de UsersClient em docs/specs/admin_users_spec.md",
       "status": "COMPLETED",
-      "outputSummary": "Especificacao SSoT completa criada em docs/specs/funnel_builder_spec.md"
+      "outputSummary": "Especificacao SSoT completa criada em docs/specs/admin_users_spec.md"
     },
     {
-      "id": "task-1784939263689-984",
-      "title": "Implementar Server Actions e esquemas Zod (SSoT) para Auto-Save e Reordenação de blocos no Funnel Builder",
+      "id": "task-1784940526687-142",
+      "title": "Implementar schemas Zod (SSoT) e Server Actions aprimoradas para busca, filtro e alteracao de permissoes de usuarios com RBAC",
       "assignedAgent": "backend",
-      "description": "Criar action-utils RBAC e endpoints de reordenação",
+      "description": "Criar schemas Zod e Server Actions de listagem/atualizacao em src/app/actions/admin.ts",
       "status": "COMPLETED",
-      "outputSummary": "Schemas Zod SSoT, FunnelService e Server Actions implementados"
+      "outputSummary": "Schemas Zod src/schemas/admin.ts e Server Actions em src/app/actions/admin.ts concluidos sem erros tsc"
     },
     {
-      "id": "task-1784939263753-269",
-      "title": "Implementar UI/UX do Funnel Builder com Tailwind CSS, Tokens do Design System, dnd-kit e atalhos de teclado",
+      "id": "task-1784940526741-813",
+      "title": "Implementar UI/UX do UsersClient com Tailwind CSS, Tokens do Design System, busca em tempo real, filtros de plano/papel e Sonner Toasts",
       "assignedAgent": "frontend",
-      "description": "Construir o novo construtor visual de funil com auto-save e preview em tempo real",
+      "description": "Refinar UsersClient com Tailwind CSS, Design Tokens, Sonner toasts e filtros de busca",
       "status": "COMPLETED",
-      "outputSummary": "Componentes UI/UX do Funnel Builder com Tailwind, dnd-kit e auto-save concluidos sem erros tsc"
+      "outputSummary": "Interface UsersClient aprimorada com busca, filtros, Sonner toasts e Tailwind Tokens"
     },
     {
-      "id": "task-1784939263808-258",
-      "title": "Criar testes unitarios (Vitest) para o Funnel Builder e executar validacao de build",
+      "id": "task-1784940526797-662",
+      "title": "Criar testes unitarios para a Gestao de Usuarios e executar validacao de build",
       "assignedAgent": "qa",
-      "description": "Testes de integracao do funil e checagem tsc",
+      "description": "Testes de integracao de RBAC de usuarios e checagem tsc/next build",
       "status": "COMPLETED",
-      "outputSummary": "Suite de 28 testes aprovada com 100% sucesso e build validado"
+      "outputSummary": "Suite de 52 testes aprovada com 100% sucesso e build validado"
     },
     {
-      "id": "task-1784939263872-324",
-      "title": "Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto",
+      "id": "task-1784940526853-238",
+      "title": "Executar linter, auditoria de seguranca RBAC e atualizar documentacao centralizada em docs/",
       "assignedAgent": "auditor",
-      "description": "Conformidade total e atualizacao do ROADMAP/PRD",
+      "description": "Conformidade total e atualizacao do continuous_audit_log.md e PRD.md",
       "status": "COMPLETED",
-      "outputSummary": "Auditoria de Tailwind/Tokens aprovada e documentacao centralizada PRD/ROADMAP atualizada"
+      "outputSummary": "Auditoria de Tailwind/Tokens aprovada e documentacao centralizada em docs/ atualizada"
     }
   ],
   "history": [
@@ -145,6 +145,90 @@
       "agent": "auditor",
       "action": "update_task_status",
       "result": "Status da tarefa \"Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:48:46.630Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Especificar arquitetura SSoT e contratos para a Gestao de Usuarios Administrativa (UsersClient, Busca, Filtros, Toasts e RBAC)\" atribuída ao agente architect"
+    },
+    {
+      "timestamp": "2026-07-25T00:48:46.688Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Implementar schemas Zod (SSoT) e Server Actions aprimoradas para busca, filtro e alteracao de permissoes de usuarios com RBAC\" atribuída ao agente backend"
+    },
+    {
+      "timestamp": "2026-07-25T00:48:46.741Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Implementar UI/UX do UsersClient com Tailwind CSS, Tokens do Design System, busca em tempo real, filtros de plano/papel e Sonner Toasts\" atribuída ao agente frontend"
+    },
+    {
+      "timestamp": "2026-07-25T00:48:46.797Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Criar testes unitarios para a Gestao de Usuarios e executar validacao de build\" atribuída ao agente qa"
+    },
+    {
+      "timestamp": "2026-07-25T00:48:46.853Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Executar linter, auditoria de seguranca RBAC e atualizar documentacao centralizada em docs/\" atribuída ao agente auditor"
+    },
+    {
+      "timestamp": "2026-07-25T00:49:23.743Z",
+      "agent": "architect",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Especificar arquitetura SSoT e contratos para a Gestao de Usuarios Administrativa (UsersClient, Busca, Filtros, Toasts e RBAC)\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:49:23.797Z",
+      "agent": "backend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar schemas Zod (SSoT) e Server Actions aprimoradas para busca, filtro e alteracao de permissoes de usuarios com RBAC\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:51:30.579Z",
+      "agent": "backend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar schemas Zod (SSoT) e Server Actions aprimoradas para busca, filtro e alteracao de permissoes de usuarios com RBAC\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:51:30.628Z",
+      "agent": "frontend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar UI/UX do UsersClient com Tailwind CSS, Tokens do Design System, busca em tempo real, filtros de plano/papel e Sonner Toasts\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:52:29.945Z",
+      "agent": "frontend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar UI/UX do UsersClient com Tailwind CSS, Tokens do Design System, busca em tempo real, filtros de plano/papel e Sonner Toasts\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:52:30.000Z",
+      "agent": "qa",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Criar testes unitarios para a Gestao de Usuarios e executar validacao de build\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:54:35.104Z",
+      "agent": "qa",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Criar testes unitarios para a Gestao de Usuarios e executar validacao de build\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:54:35.155Z",
+      "agent": "auditor",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Executar linter, auditoria de seguranca RBAC e atualizar documentacao centralizada em docs/\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:55:33.333Z",
+      "agent": "auditor",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Executar linter, auditoria de seguranca RBAC e atualizar documentacao centralizada em docs/\" alterado para COMPLETED"
     }
   ]
 }
