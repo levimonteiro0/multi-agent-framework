@@ -1,6 +1,6 @@
 ---
 name: Orchestrator Framework (by levimonteiro0)
-description: Framework Multi-Agente Autônomo e Universal por levimonteiro0. Orquestra 5 agentes especializados (Architect, Frontend, Backend, QA, Auditor) em loop contínuo com suporte multi-cliente (Antigravity, Codex, Claude, Cursor) e diretrizes obrigatórias de SSoT, Tailwind/Tokens e Documentação Centralizada.
+description: Framework Multi-Agente Autônomo e Universal por levimonteiro0. Orquestra 5 agentes especializados (Architect, Frontend, Backend, QA, Auditor) em loop contínuo com suporte multi-cliente (Antigravity, Codex, Claude, Cursor) e diretrizes obrigatórias de SSoT, Tailwind/Tokens e Documentação Centralizada na pasta docs/.
 ---
 
 # Framework Multi-Agente Autônomo por `levimonteiro0`
@@ -13,7 +13,7 @@ Ele coordena uma equipe de 5 agentes especializados sob autoridade centralizada 
 2. **`Backend Specialist`**: Serviços, modelos de dados, Server Actions, APIs e validação Zod.
 3. **`Frontend Specialist`**: Interfaces Web utilizando obrigatoriamente Tailwind CSS e Tokens do Design System.
 4. **`QA Tester`**: Suíte de testes, validação de compilação/build e auto-correção de falhas.
-5. **`Auditor & Docs`**: Linter, auditoria estática e garantia de documentação 100% atualizada.
+5. **`Auditor & Docs`**: Chief Documentation Officer, responsável pela padronização da pasta `docs/`, linter e auditorias contínuas.
 
 ---
 
@@ -23,7 +23,7 @@ Em qualquer projeto ou contexto onde este framework for utilizado, os agentes cu
 
 1. **SSoT (Single Source of Truth)**: Schemas, validações e tipos devem ser definidos em uma única fonte central para impedir inconsistências entre Frontend, Backend e Banco de Dados.
 2. **Tailwind CSS & Design Tokens**: Em todo desenvolvimento Web, é obrigatório utilizar Tailwind CSS e os Tokens de Design System centralizados.
-3. **Documentação Centralizada & Completa**: Tudo o que for construído (arquitetura, APIs, componentes, telas) deve ser documentado de forma clara e rigorosa.
+3. **Documentação Padronizada e Centralizada (`docs/`)**: Tudo o que for construído ou corrigido deve ser documentado de forma clara e rigorosa dentro da pasta `docs/` (`docs/PRD.md`, `docs/ROADMAP.md`, `docs/ARCHITECTURE.md`, `docs/specs/`, `docs/audit/`).
 4. **Execução Autônoma em Loop (Overnight Dev)**: Após o alinhamento inicial (perguntas do PRD), o Orquestrador detém 100% da autoridade de decisão e trabalha em loop até a aprovação total dos testes.
 
 ---
@@ -34,20 +34,17 @@ Em qualquer projeto ou contexto onde este framework for utilizado, os agentes cu
 [PRD / Especificações] ➔ Perguntas de Alinhamento (Usuário) ➔ 1. Architect ➔ 2. Backend ➔ 3. Frontend ➔ 4. QA Tester ➔ 5. Auditor ➔ [Loop / Conclusão]
 ```
 
-### Fase 1: Alinhamento Interativo Inicial
-- O Orquestrador lê o `PRD.md` (ou especificação fornecida).
-- Apresenta as perguntas essenciais de alinhamento ao desenvolvedor.
-- Grava o estado inicial em `.agents/state/orchestration_state.json`.
-
-### Fase 2: Execução e Handoff entre Agentes
-- **Architect** ➔ Define contratos SSoT e especificações.
-- **Backend Specialist** ➔ Constrói serviços, banco e APIs.
-- **Frontend Specialist** ➔ Constrói telas com Tailwind CSS e Design Tokens.
-- **QA Tester** ➔ Roda testes e build. Se falhar, retorna com os logs para auto-correção.
-- **Auditor & Docs** ➔ Valida qualidade e atualiza a documentação centralizada.
-
-### Fase 3: Modo Overnight (Execução Contínua)
-- O Orquestrador roda autonomamente gerenciando tarefas até a conclusão do PRD.
+### Estrutura Padrão de Documentação (`docs/`)
+```
+docs/
+├── PRD.md                       # Requisitos do Produto e Visão de Negócio
+├── ROADMAP.md                   # Fases de Evolução e Checklist de Recursos
+├── ARCHITECTURE.md              # Padrões Técnicos, SSoT, Schemas Zod e APIs
+├── specs/                       # Especificações Detalhadas por Módulo (ex: funnel_builder_spec.md)
+└── audit/                       # Histórico e Diário de Auditoria Contínua
+    ├── continuous_audit_log.md  # Log de auditoria, bugs corrigidos e melhorias
+    └── technical_audit.md       # Diagnósticos de segurança e dívidas técnicas
+```
 
 ---
 
