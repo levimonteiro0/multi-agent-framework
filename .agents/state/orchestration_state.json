@@ -1,0 +1,25 @@
+{
+  "project": "umbu",
+  "framework": "levimonteiro0 Multi-Agent Framework",
+  "version": "1.0.0",
+  "status": "IDLE",
+  "activeCycle": 0,
+  "currentAgent": "orchestrator",
+  "prdSource": "PRD.md",
+  "guardrails": {
+    "ssot": true,
+    "tailwindAndTokens": true,
+    "documentationRequired": true
+  },
+  "alignmentQuestions": [],
+  "userAnswers": {},
+  "tasks": [],
+  "history": [
+    {
+      "timestamp": "2026-07-24T17:21:40Z",
+      "agent": "orchestrator",
+      "action": "initialize_state",
+      "result": "Framework Multi-Agente de levimonteiro0 inicializado com Guardrails de SSoT, Tailwind/Tokens e Documentação Centralizada."
+    }
+  ]
+}
