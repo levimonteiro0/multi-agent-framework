@@ -1,0 +1,150 @@
+{
+  "project": "umbu",
+  "framework": "levimonteiro0 Multi-Agent Framework",
+  "version": "1.0.0",
+  "status": "IDLE",
+  "activeCycle": 0,
+  "currentAgent": "orchestrator",
+  "prdSource": "PRD.md",
+  "guardrails": {
+    "ssot": true,
+    "tailwindAndTokens": true,
+    "documentationRequired": true
+  },
+  "alignmentQuestions": [],
+  "userAnswers": {},
+  "tasks": [
+    {
+      "id": "task-1784939263629-930",
+      "title": "Especificar arquitetura SSoT e contratos de componentes para o Funnel Builder (Drag & Drop, Auto-Save, Painel de Propriedades)",
+      "assignedAgent": "architect",
+      "description": "Decompor o Funnel Builder em schemas Zod, modelos Prisma e tipos de props",
+      "status": "COMPLETED",
+      "outputSummary": "Especificacao SSoT completa criada em docs/specs/funnel_builder_spec.md"
+    },
+    {
+      "id": "task-1784939263689-984",
+      "title": "Implementar Server Actions e esquemas Zod (SSoT) para Auto-Save e Reordenação de blocos no Funnel Builder",
+      "assignedAgent": "backend",
+      "description": "Criar action-utils RBAC e endpoints de reordenação",
+      "status": "COMPLETED",
+      "outputSummary": "Schemas Zod SSoT, FunnelService e Server Actions implementados"
+    },
+    {
+      "id": "task-1784939263753-269",
+      "title": "Implementar UI/UX do Funnel Builder com Tailwind CSS, Tokens do Design System, dnd-kit e atalhos de teclado",
+      "assignedAgent": "frontend",
+      "description": "Construir o novo construtor visual de funil com auto-save e preview em tempo real",
+      "status": "COMPLETED",
+      "outputSummary": "Componentes UI/UX do Funnel Builder com Tailwind, dnd-kit e auto-save concluidos sem erros tsc"
+    },
+    {
+      "id": "task-1784939263808-258",
+      "title": "Criar testes unitarios (Vitest) para o Funnel Builder e executar validacao de build",
+      "assignedAgent": "qa",
+      "description": "Testes de integracao do funil e checagem tsc",
+      "status": "COMPLETED",
+      "outputSummary": "Suite de 28 testes aprovada com 100% sucesso e build validado"
+    },
+    {
+      "id": "task-1784939263872-324",
+      "title": "Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto",
+      "assignedAgent": "auditor",
+      "description": "Conformidade total e atualizacao do ROADMAP/PRD",
+      "status": "COMPLETED",
+      "outputSummary": "Auditoria de Tailwind/Tokens aprovada e documentacao centralizada PRD/ROADMAP atualizada"
+    }
+  ],
+  "history": [
+    {
+      "timestamp": "2026-07-24T17:21:40Z",
+      "agent": "orchestrator",
+      "action": "initialize_state",
+      "result": "Framework Multi-Agente de levimonteiro0 inicializado com Guardrails de SSoT, Tailwind/Tokens e Documentação Centralizada."
+    },
+    {
+      "timestamp": "2026-07-25T00:27:43.630Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Especificar arquitetura SSoT e contratos de componentes para o Funnel Builder (Drag & Drop, Auto-Save, Painel de Propriedades)\" atribuída ao agente architect"
+    },
+    {
+      "timestamp": "2026-07-25T00:27:43.689Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Implementar Server Actions e esquemas Zod (SSoT) para Auto-Save e Reordenação de blocos no Funnel Builder\" atribuída ao agente backend"
+    },
+    {
+      "timestamp": "2026-07-25T00:27:43.753Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Implementar UI/UX do Funnel Builder com Tailwind CSS, Tokens do Design System, dnd-kit e atalhos de teclado\" atribuída ao agente frontend"
+    },
+    {
+      "timestamp": "2026-07-25T00:27:43.808Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Criar testes unitarios (Vitest) para o Funnel Builder e executar validacao de build\" atribuída ao agente qa"
+    },
+    {
+      "timestamp": "2026-07-25T00:27:43.872Z",
+      "agent": "orchestrator",
+      "action": "add_task",
+      "result": "Adicionada tarefa \"Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto\" atribuída ao agente auditor"
+    },
+    {
+      "timestamp": "2026-07-25T00:28:29.495Z",
+      "agent": "architect",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Especificar arquitetura SSoT e contratos de componentes para o Funnel Builder (Drag & Drop, Auto-Save, Painel de Propriedades)\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:28:29.545Z",
+      "agent": "backend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar Server Actions e esquemas Zod (SSoT) para Auto-Save e Reordenação de blocos no Funnel Builder\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:30:30.967Z",
+      "agent": "backend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar Server Actions e esquemas Zod (SSoT) para Auto-Save e Reordenação de blocos no Funnel Builder\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:30:31.022Z",
+      "agent": "frontend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar UI/UX do Funnel Builder com Tailwind CSS, Tokens do Design System, dnd-kit e atalhos de teclado\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:32:50.763Z",
+      "agent": "frontend",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Implementar UI/UX do Funnel Builder com Tailwind CSS, Tokens do Design System, dnd-kit e atalhos de teclado\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:32:50.826Z",
+      "agent": "qa",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Criar testes unitarios (Vitest) para o Funnel Builder e executar validacao de build\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:35:05.473Z",
+      "agent": "qa",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Criar testes unitarios (Vitest) para o Funnel Builder e executar validacao de build\" alterado para COMPLETED"
+    },
+    {
+      "timestamp": "2026-07-25T00:35:05.540Z",
+      "agent": "auditor",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto\" alterado para IN_PROGRESS"
+    },
+    {
+      "timestamp": "2026-07-25T00:37:05.104Z",
+      "agent": "auditor",
+      "action": "update_task_status",
+      "result": "Status da tarefa \"Executar linter, auditoria estatica e atualizar documentacao centralizada do projeto\" alterado para COMPLETED"
+    }
+  ]
+}
