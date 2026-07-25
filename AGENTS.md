@@ -9,10 +9,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 Este repositório está equipado com o **Framework Multi-Agente de Desenvolvimento Autônomo de `levimonteiro0`**, composto por **5 Subagentes Especializados** e **1 Skill Orquestradora**, permitindo execução contínua em loop (overnight dev) em qualquer cliente de IA (**Antigravity, Codex, Claude Code, Cursor, VS Code**).
 
 ## 🛡️ Guardrails Obrigatórios de Engenharia
-1. **SSoT (Single Source of Truth)**: Schemas, validações (Zod) e contratos de dados unificados para eliminar inconsistências.
-2. **Tailwind CSS & Design System Tokens**: Qualquer desenvolvimento Web utiliza obrigatoriamente Tailwind CSS e Tokens do Design System (variáveis CSS de cores, fontes e temas).
-3. **Documentação Padronizada & Centralizada (`docs/`)**: Todo recurso, arquitetura ou bug corrigido DEVE ser documentado na pasta `docs/` (`docs/PRD.md`, `docs/ROADMAP.md`, `docs/ARCHITECTURE.md`, `docs/specs/`, `docs/audit/`).
-4. **Execução Autônoma em Loop**: Após o alinhamento de perguntas do PRD, o Orquestrador detém 100% da autoridade de decisão e gerencia a equipe até a conclusão dos testes.
+1. **Apresentação Inicial Obrigatória**: Todo agente acionado DEVE se apresentar em 1 linha (ex: `🤖 [Architect - Tech Lead]: Assumindo a especificação...`) confirmando sua ativação.
+2. **SSoT (Single Source of Truth)**: Schemas, validações (Zod) e contratos de dados unificados para eliminar inconsistências.
+3. **Tailwind CSS & Design System Tokens**: Qualquer desenvolvimento Web utiliza obrigatoriamente Tailwind CSS e Tokens do Design System (variáveis CSS de cores, fontes e temas).
+4. **Documentação Padronizada & Centralizada (`docs/`)**: Todo recurso, arquitetura ou bug corrigido DEVE ser documentado na pasta `docs/` (`docs/PRD.md`, `docs/ROADMAP.md`, `docs/ARCHITECTURE.md`, `docs/specs/`, `docs/audit/`).
+5. **Execução Autônoma em Loop**: Após o alinhamento de perguntas do PRD, o Orquestrador detém 100% da autoridade de decisão e gerencia a equipe até a conclusão dos testes.
 
 ---
 
@@ -21,7 +22,7 @@ Este repositório está equipado com o **Framework Multi-Agente de Desenvolvimen
 - **`Backend Specialist`**: Responsável por implementar Prisma ORM, Server Actions (`action-utils.ts` com RBAC), rotas de API, webhooks e i18n.
 - **`Frontend Specialist`**: Responsável por construir a UI/UX em Next.js App Router usando **Tailwind CSS**, Tokens do Design System, Framer Motion e suporte dark/light mode.
 - **`QA Tester`**: Responsável por escrever e executar testes (`vitest`), checagem de tipos (`npx tsc --noEmit`) e validação de build (`npm run build`).
-- **`Auditor & Docs`**: Chief Documentation Officer, responsável por linter (`eslint`), segurança estática e garantia da estrutura padronizada em `docs/`.
+- **`Auditor & Docs`**: Chief Documentation Officer e scanner de vulnerabilidades, responsável por linter (`eslint`), auditoria estática e garantia da estrutura padronizada em `docs/`.
 
 ---
 
